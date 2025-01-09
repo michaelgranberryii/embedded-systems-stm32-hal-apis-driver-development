@@ -2,3 +2,6 @@ resources/
 */.metadata
 */*/Debug
 */*/.settings
+*/*/*.launch
+*/*/.cproject
+*/*/.project
