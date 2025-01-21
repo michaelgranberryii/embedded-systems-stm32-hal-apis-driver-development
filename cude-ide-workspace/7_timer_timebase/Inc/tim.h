@@ -15,5 +15,5 @@
 #define TIMx_IRQn TIM3_IRQn
 #define TIMx_IRQHandler TIM3_IRQHandler
 
-
+void timTimebaseInit();
 #endif /* TIM_H_ */

@@ -4,7 +4,7 @@
 #include "adc.h"
 #include "exti.h"
 #include "led.h"
-
+#include "tim.h"
 
 
 int main() {
@@ -13,6 +13,8 @@ int main() {
 	pc13_btn_init();
 	pa5_led_init();
 	uart2Init();
+	timTimebaseInit();
+
 	while(1) {
 
 	}
@@ -22,5 +24,9 @@ void SysTick_Handler(void) {
 	HAL_IncTick();
 }
 
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+	// do something
+	printf("TIMx : 1 second elapsed \r\n");
+}
 
 
