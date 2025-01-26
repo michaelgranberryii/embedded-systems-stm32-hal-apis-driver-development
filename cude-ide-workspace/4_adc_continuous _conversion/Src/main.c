@@ -9,7 +9,7 @@ uint32_t sensor_value;
 int main() {
 
 	HAL_Init();
-	uart2Init();
+	uart2_init();
 	adcInitStart();
 
 

@@ -5,8 +5,8 @@ UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 
-void uart_init(void);
-void uart2Init();
+void uart1_init(void);
+void uart2_init();
 
 int __io_putchar(int ch) {
 	HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 100);
@@ -36,8 +36,8 @@ int main()
 {
 
   HAL_Init();
-  uart2Init();
-  uart_init();
+  uart2_init();
+  uart1_init();
 
 
   HAL_UART_Receive_IT(&huart1,rx_buffer,10); // Need to call  HAL_UART_Receive_IT() before HAL_UART_Transmit_IT().
@@ -60,7 +60,7 @@ void  SysTick_Handler(void)
 }
 
 
-void uart_init(void)
+void uart1_init(void)
 {
 
 	 GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -100,7 +100,7 @@ void uart_init(void)
 
 }
 
-void uart2Init() {
+void uart2_init() {
 
 	GPIO_InitTypeDef gpioInitStruct = {0};
 

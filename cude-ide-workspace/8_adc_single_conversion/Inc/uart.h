@@ -8,7 +8,7 @@
 #ifndef UART_H_
 #define UART_H_
 
-void uart2Init();
+void uart2_init();
 
 
 #endif /* UART_H_ */

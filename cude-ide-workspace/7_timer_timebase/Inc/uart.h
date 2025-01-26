@@ -10,7 +10,7 @@
 
 #include "stm32l4xx_hal.h"
 
-void uart2Init();
+void uart2_init();
 
 
 #endif /* UART_H_ */

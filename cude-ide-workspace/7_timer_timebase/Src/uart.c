@@ -10,7 +10,7 @@ int __io_putchar(int ch) {
 	return ch;
 }
 
-void uart2Init() {
+void uart2_init() {
 
 	GPIO_InitTypeDef gpioInitStruct = {0};
 

@@ -3,7 +3,7 @@
 
 UART_HandleTypeDef huart1;
 
-void uart2Init();
+void uart2_init();
 char msg[20] = "HELLO WORLD\r\n";
 
 int __io_putchar(int ch) {
@@ -14,7 +14,7 @@ int __io_putchar(int ch) {
 int main() {
 
 	HAL_Init();
-	uart2Init();
+	uart2_init();
 
 
 	while(1) {
@@ -24,7 +24,7 @@ int main() {
 }
 
 
-void uart2Init() {
+void uart2_init() {
 
 	GPIO_InitTypeDef gpioInitStruct = {0};
 

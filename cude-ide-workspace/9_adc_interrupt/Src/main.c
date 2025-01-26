@@ -10,7 +10,7 @@ ADC_HandleTypeDef hadc12;
 int main() {
 
 	HAL_Init();
-	uart2Init();
+	uart2_init();
 	adcPa0InterruptConvInit();
 	HAL_ADC_Start_IT(&hadc12);
 

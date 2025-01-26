@@ -18,7 +18,7 @@ int main() {
 	HAL_Init();
 	pc13_btn_init();
 	pa5_led_init();
-	uart2Init();
+	uart2_init();
 	while(1) {
 
 	}
